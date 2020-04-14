@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <strong class="pageTitle">Notícias Covid-19</strong>
+      <nav class="menu">
+        <ul class="menuLinks">
+          <li class="menuLink">
+            <a href="/">Home</a>
+          </li>
+          <li class="menuLink">
+            <a href="sobre.html">Sobre</a>
+          </li>
+          <li class="menuLink">
+            <a href="contato.html">Contato</a>
+          </li>
+          <li class="menuLink">
+            <a href="saiba-mais.html">Saiba Mais</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1 class="containerTitle">
+        Entre em contato
+      </h1>
+
+      <form id="sendMail" class="sendMail">
+        <label for="nome">Seu Nome</label>
+        <input type="text" name="nome" id="nome" />
+
+        <label for="email">Seu Email</label>
+        <input type="text" name="email" id="email" />
+
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </main>
+
+    <script src="./scripts/mail.js"></script>
+  </body>
+</html>

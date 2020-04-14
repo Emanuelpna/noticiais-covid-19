@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background: #E6E7EB;
+  background: #e6e7eb;
 }
 
 .header {
@@ -31,6 +31,7 @@ body {
 
 .pageTitle {
   font-size: 1.3rem;
+  color: rgb(57, 54, 72);
 }
 
 .menu {
@@ -55,7 +56,7 @@ body {
   padding: 4px;
 }
 
-.menuLink:hover  {
+.menuLink:hover {
   border-color: rgb(29, 30, 34);
 }
 
@@ -68,6 +69,7 @@ body {
 }
 
 .containerTitle {
+  color: rgb(57, 54, 72);
   font-size: 1.7rem;
   margin: 24px 0;
   border-bottom: 1px solid rgba(44, 47, 58, 0.15);
@@ -124,7 +126,7 @@ body {
 }
 
 .news.video .newsBanner {
-  width: 560px; 
+  width: 560px;
   height: 315px;
 }
 
@@ -141,11 +143,11 @@ body {
 
 .newsTitle {
   font-size: 1.1rem;
-  padding: 6px 18px;
+  padding: 6px 8px;
   text-align: center;
   line-height: 1.4;
   margin-top: 8px;
-  color: #1c1c1d;
+  color: rgb(57, 54, 72);
 }
 
 .news.video .newsTitle {
@@ -153,12 +155,117 @@ body {
   padding: 6px 90px;
 }
 
-
 .newsDescription {
-  font-size: 0.9rem;
-  padding: 0 20px;
+  font-size: 1rem;
+  padding: 0 12px;
   text-align: center;
   line-height: 1.1;
   margin-top: 3px;
-  color: #525254;
+  color: #676769;
+}
+
+.aboutContainer {
+  display: flex;
+  padding: 0 6%;
+  justify-content: space-between;
+}
+
+.aboutContent {
+  height: 100%;
+  padding: 12px 24px;
+}
+
+.authorPic {
+  width: 40%;
+  margin-right: 32px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(83, 93, 132, 0.18);
+}
+
+.authorName {
+  width: 100%;
+  display: block;
+  margin: 12px 0;
+  font-size: 2rem;
+}
+
+.authorDescription {
+  width: 100%;
+  display: block;
+  margin: 12px 0;
+  font-size: 1.2rem;
+}
+
+.sendMail {
+  width: 60%;
+  margin: auto;
+  box-shadow: 0 3px 6px 0 rgba(83, 93, 132, 0.28);
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.sendMail label {
+  color: rgb(57, 54, 72);
+  font-weight: 700;
+}
+
+.sendMail input,
+.sendMail textarea {
+  border: 1px solid #9999a7;
+  padding: 10px 16px;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 8px;
+  font-size: 1rem;
+  margin-bottom: 32px;
+  transition: 150ms ease-in-out;
+}
+
+.sendMail input:focus,
+.sendMail textarea:focus {
+  border: 2px solid #3c3aef;
+  outline: none;
+}
+
+.sendMail textarea {
+  resize: vertical;
+}
+
+.sendMail button {
+  border: 1px solid #3331d0;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  background: #3c3aef;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.newsLinkList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.newsLink {
+  width: 25%;
+  box-shadow: 0 2px 4px 0 rgba(83, 93, 132, 0.12),
+    0 0px 2px 0 rgba(83, 93, 132, 0.1);
+  padding: 12px 24px;
+  margin: 14px 28px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 150ms ease-in-out;
+}
+
+.newsLink:hover {
+  box-shadow: 0 4px 8px 0 rgba(52, 61, 95, 0.15),
+    0 0px 2px 0 rgba(83, 93, 132, 0.1);
 }
