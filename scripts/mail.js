@@ -7,7 +7,8 @@ const sendMail = async (payload) => {
     'https://emanuelandrade.com.br/services/mail.php',
     {
       method: 'POST',
-      body: payload,
+      body: JSON.stringify(payload),
+      headers: { ContentType: 'application/json' },
     }
   );
 
