@@ -3,8 +3,6 @@ const payload = (nome, email, descricao) => {
 };
 
 const sendMail = async (payload) => {
-  return true;
-  
   const response = await fetch(
     'https://emanuelandrade.com.br/services/mail.php',
     {
@@ -27,7 +25,7 @@ form.addEventListener('submit', async (e) => {
 
   const nome = form.querySelector('input#nome');
   const email = form.querySelector('input#email');
-  const mensagem = form.querySelector('input#mensagem');
+  const mensagem = form.querySelector('textarea#mensagem');
 
   const body = payload(nome.value, email.value, mensagem.value);
 
@@ -35,9 +33,9 @@ form.addEventListener('submit', async (e) => {
 
   if (isSended) {
     // Alerta de sucesso
-    console.log('isSended :', isSended);
+    alert('Email enviado com sucesso!');
   } else {
     // Alerta de erro
-    console.error('isSended :', isSended);
+    alert('Não foi possível enviar o email, tente novamente mais tarde.');
   }
 });
