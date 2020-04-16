@@ -1,0 +1,63 @@
+.sendMail {
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.sendMail label {
+  color: rgb(57, 54, 72);
+  font-weight: 700;
+}
+
+.sendMail input,
+.sendMail textarea {
+  border: 1px solid #9999a7;
+  padding: 10px 16px;
+  width: 100%;
+  border-radius: 3px;
+  margin-top: 8px;
+  font-size: 1rem;
+  margin-bottom: 32px;
+  transition: 150ms ease-in-out;
+}
+
+.sendMail input:focus,
+.sendMail textarea:focus {
+  border: 2px solid #4257e8;
+  outline: none;
+}
+
+.sendMail input:not(:placeholder-shown),
+.sendMail textarea:not(:placeholder-shown) {
+  border: 2px solid #18bd80;
+  outline: none;
+}
+
+.sendMail textarea {
+  resize: vertical;
+  min-height: 200px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sendMail button {
+  border: 1px solid #3331d0;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  background: #4257e8;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: 150ms ease-in-out;
+}
+
+.sendMail button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px 0 rgba(83, 93, 132, 0.18);
+}

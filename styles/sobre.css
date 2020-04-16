@@ -1,0 +1,78 @@
+.aboutContainer {
+  display: flex;
+  padding: 0 6%;
+  justify-content: space-between;
+}
+
+.aboutContent {
+  height: 100%;
+  padding: 12px 24px;
+}
+
+.authorPic {
+  width: 40%;
+  margin-right: 32px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(83, 93, 132, 0.18);
+}
+
+.authorContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+
+.authorName {
+  width: 100%;
+  display: block;
+  margin: 12px 0;
+  font-size: 2rem;
+  color: rgb(57, 54, 72);
+  font-family: 'Lora', serif;
+}
+
+.authorDescription {
+  width: 100%;
+  display: block;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #676769;
+}
+
+.authorSocialLinks {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.authorSocialLinks span {
+  font-size: 1.05rem;
+  color: rgb(57, 54, 72);
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutContainer {
+    width: 80%;
+    margin: auto;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+  }
+
+  .authorPic {
+    width: 60%;
+  }
+
+  .authorName {
+    font-size: 2.5rem;
+  }
+
+  .authorDescription {
+    width: 80%;
+    margin: 12px auto;
+  }
+
+  .authorSocialLinks {
+    justify-content: center;
+  }
+}

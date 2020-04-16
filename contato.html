@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
 
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/contato.css" />
   </head>
   <body>
     <header class="header">
@@ -35,13 +36,13 @@
 
       <form id="sendMail" class="sendMail">
         <label for="nome">Seu Nome</label>
-        <input type="text" name="nome" id="nome" />
+        <input type="text" name="nome" id="nome" placeholder="Digite aqui o seu Nome completo" />
 
-        <label for="email">Seu Email</label>
-        <input type="text" name="email" id="email" />
+        <label for="email">Seu E-mail</label>
+        <input type="text" name="email" id="email" placeholder="Digite aqui o seu E-mail" />
 
         <label for="mensagem">Mensagem</label>
-        <textarea name="mensagem" id="mensagem"></textarea>
+        <textarea name="mensagem" id="mensagem" placeholder="Digite aqui a sua mensagem"></textarea>
 
         <button type="submit">Enviar Mensagem</button>
       </form>

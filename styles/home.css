@@ -1,0 +1,152 @@
+.newsRow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 32px 6px;
+  width: 100%;
+}
+
+.rowTitle {
+  width: 100%;
+  font-size: 1.3rem;
+  margin-top: 24px;
+  border-bottom: 1px solid rgba(44, 47, 58, 0.15);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+.news {
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-left: 12px;
+  margin-top: 32px;
+}
+
+.news.video {
+  width: 51%;
+  margin-left: 0;
+}
+
+.news.audio {
+  width: 51%;
+  margin-left: 0;
+  height: 240px;
+}
+
+.news iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.newsBanner {
+  width: 90%;
+}
+
+.newsBanner {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(83, 93, 132, 0.18);
+  transition: 150ms ease-in-out;
+}
+
+.news.video .newsBanner {
+  width: 560px;
+  height: 315px;
+}
+
+.news.audio .newsBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 253px;
+}
+
+.bannerImg {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.newsTitle {
+  font-size: 1.5rem;
+  font-family: 'Lora', serif;
+  padding: 6px 14px;
+  line-height: 1.4;
+  margin-top: 8px;
+  color: rgb(57, 54, 72);
+}
+
+.news.video .newsTitle {
+  font-size: 1.3rem;
+  padding: 6px 90px;
+}
+
+.newsDescription {
+  font-size: 1.05rem;
+  padding: 0 14px;
+  line-height: 1.1;
+  margin-top: 3px;
+  color: #676769;
+}
+
+@media screen and (max-width: 1440px) {
+  .newsBanner,
+  .news.video .newsBanner,
+  .news.audio .newsBanner,
+  iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .news.video,
+  .news.audio {
+    width: 100%;
+  }
+
+  .newsBanner,
+  .news.video .newsBanner,
+  .news.audio .newsBanner,
+  iframe {
+    width: 100%;
+  }
+
+  .news.video .newsBanner {
+    height: 550px;
+  }
+
+  .news.audio iframe {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .newsBanner {
+    height: 300px;
+  }
+
+  .news.video .newsBanner {
+    width: 102%;
+    height: 380px;
+    margin-left: -2%;
+  }
+
+  .newsTitle {
+    padding: 6px 8px;
+  }
+
+  .newsDescription {
+    padding: 0 8px;
+  }
+}
