@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
   margin: 32px 6px;
   width: 100%;
 }
@@ -20,7 +19,6 @@
   width: 40%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   margin-left: 12px;
   margin-top: 32px;
 }

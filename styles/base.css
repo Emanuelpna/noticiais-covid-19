@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background: #e6e7eb;
+  background: #ebedf5;
 }
 
 .header {
@@ -91,6 +91,7 @@ body {
   }
 
   .header {
+    padding: 2rem 4%;
     padding-bottom: 1rem;
     flex-flow: column nowrap;
   }

@@ -9,17 +9,24 @@
   padding: 12px 24px;
 }
 
+.authorPicContainer {
+  min-width: 40%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+}
+
 .authorPic {
-  width: 40%;
-  margin-right: 32px;
+  width: 100%;
   border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(83, 93, 132, 0.18);
+  box-shadow: 0 2px 6px 0 rgba(53, 58, 72, 0.31);
 }
 
 .authorContainer {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
+  margin-left: 46px;
 }
 
 .authorName {
@@ -34,45 +41,60 @@
 .authorDescription {
   width: 100%;
   display: block;
-  margin: 0;
-  font-size: 1.2rem;
+  margin: 12px 0;
+  font-size: 1.1rem;
   color: #676769;
 }
 
 .authorSocialLinks {
-  margin-top: 32px;
+  position: relative;
+  margin-top: 6px;
   display: flex;
   align-items: center;
 }
 
 .authorSocialLinks span {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: rgb(57, 54, 72);
+  margin-right: 8px;
+}
+
+.authorSocialLink::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 1200px) {
   .aboutContainer {
-    width: 80%;
+    width: 90%;
     margin: auto;
     flex-flow: column wrap;
-    align-items: center;
-    text-align: center;
+    align-items: center;    
   }
 
+  .authorContainer {
+    margin-left: 0;
+  }
   .authorPic {
-    width: 60%;
+    width: 40%;
   }
 
   .authorName {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+    margin-bottom: 18px;
   }
 
   .authorDescription {
-    width: 80%;
+    width: 100%;
     margin: 12px auto;
   }
 
   .authorSocialLinks {
     justify-content: center;
+    margin-top: 32px;
   }
 }
